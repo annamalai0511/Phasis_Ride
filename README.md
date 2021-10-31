@@ -1,0 +1,2 @@
+# Phasis_Ride
+The alternate pathway for Traffic with minimal fuel diversion will be advised to the commuters, if on a particular day pollution is high in some area measured scientifically so that we can have a safer environment by blocking that road, particularly for few hours till pollution level reaches an optimized value. This can result in an immense advantage for the residents' healthy living and also for the environment.
