@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/f618f790f8.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta name="keywords" content="Tax, TaxIt.NG, citizens firs, VAT, Witholding Tax, Nigeria Tax, taxpayers in nigeria, government, how to pay tax in Nigeria, company income tax, Federal Inland Revenue service Nigeria">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/oluwamayowaf/image/upload/v1567467076/Logo_TaxitNg_favicon_copy_aey0cu.png" type="image/x-icon">
+    <title> Phasis || Home</title>
+</head>
+
+<body>
+    <div class="header" id="myheader">
+        <a href="index.html" class="logo"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEggOKrC5sFXmiT3gqhjR3bUY47cqeTvEPJqJ4_8fZGOsswIZw9-wA2jduNda6yffHMOIXNyqD9GX2bTAKvTGpX16DWGcFQWDFKz2gqw8Lm51nNQhBxferrKPZ6PFFQ3Gzay1y-z-OeN1fUUiBFm0rr8NkR9G80eLuumX6Lpa7Z2cyUx90qws7APmQFN=s1092"></a>
+        <div class="header-right">
+
+            <a href="index.html">Home</a>
+            <a href="https://app.cpcbccr.com/AQI_India/">AQI Index</a>
+            <a href="https://maps.google.com/">MAPS</a>
+            <a href="https://m.uber.com/">Uber</a>
+            <a href="https://www.olacabs.com/">Ola</a>
+            <a href="contact.html">Contact Us</a>
+            
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myheader");
+            if (x.className === "header") {
+                x.className += " responsive";
+            } else {
+                x.className = "header";
+            }
+        }
+    </script>
+
+
+    <div class="calculate" style="padding: 50px; margin-top: 30px; ">
+        <h2>Phasis Ride</h2>
+        <br>
+        <form class="pay-form" action="">
+            <label for="" class="msg"></label>
+            <p>
+                <select class="input" id="srt"> 
+                                    <option value="0">Choose Starting Point</option>
+                                    <option value="1">Jaipur</option> 
+                                    <option value="2">Delhi</option> 
+                                    <option value="3">Kurukshetra</option> 
+                                    <option value="4">Jodhpur</option> 
+
+                                </select>
+            </p>
+            
+            <p>
+
+                <select class="input" id="des"> 
+                                    <option value="0">Choose Destination</option> 
+                                    <option value="1">Jaipur</option> 
+                                    <option value="2">Delhi</option> 
+                                    <option value="3">Kurukshetra</option> 
+                                    <option value="4">Jodhpur</option> 
+                                </select>
+            </p>
+            <br>
+            <p>
+
+                <select class="input" id="time"> 
+                                    <option value="0">When</option> 
+                                    <option value="1">Now</option> 
+                                    <option value="2">Schedule Later</option> 
+                                </select>
+            </p>
+
+
+            <p>
+                <label for="start"></label>
+
+            <input type="date" id="start" name="trip-start"
+       value="2021-10-31"
+       min="2018-01-01" max="2024-12-31">
+       <label for="appt"></label>
+
+        <input type="time" id="appt" name="appt"
+        min="09:00" max="18:00" required>
+
+            </p>
+            <br>
+            <input class="btn-pay" id="submit" type="button" value="Search" onclick = "Send()" />
+            <script type="text/javascript">
+            function Send() {
+                    var name = document.getElementById("srt").value;
+                    var tech = document.getElementById("des").value;
+                    var url = encodeURIComponent(name)+encodeURIComponent(tech)+".html" ;
+                    window.location.href = url;
+                                                    };
+
+            //<p><button class="btn-pay" id="submit">Search </button></p> 
+ 
+  
+</script>
+        </form>
+    </div>
+
+    <footer>
+    </footer>
+
+</body>
+
+</html>
